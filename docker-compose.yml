@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_chamafood
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: senha123
+      MYSQL_DATABASE: RASPLUS
+      MYSQL_USER: chamafood
+      MYSQL_PASSWORD: senha123
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - chamafood_net
+
+  adminer:
+    image: adminer
+    container_name: adminer_chamafood
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+    networks:
+      - chamafood_net
+
+volumes:
+  mysql_data:
+
+networks:
+  chamafood_net:
+    driver: bridge
