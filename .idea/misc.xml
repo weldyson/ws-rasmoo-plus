@@ -5,6 +5,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/ws-chamafood/pom.xml" />
+        <option value="$PROJECT_DIR$/ws-rasmoplus/pom.xml" />
       </list>
     </option>
   </component>
