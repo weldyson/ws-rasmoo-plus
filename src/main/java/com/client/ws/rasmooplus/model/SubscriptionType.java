@@ -1,8 +1,6 @@
 package com.client.ws.rasmooplus.model;
 
 import jakarta.persistence.*;
-
-//import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
@@ -75,5 +73,4 @@ public class SubscriptionType implements Serializable {
     public void setProductKey(String productKey) {
         this.productKey = productKey;
     }
-
 }
