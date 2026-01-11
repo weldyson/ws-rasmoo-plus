@@ -44,7 +44,7 @@ public class User implements Serializable {
     @JoinColumn(name = "subscriptions_type_id")
     private SubscriptionType subscriptionType;
 
-   
+
 }
 
 
