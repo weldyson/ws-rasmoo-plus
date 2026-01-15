@@ -8,7 +8,7 @@ public interface SubscriptionTypeService {
 
     List<SubscriptionType> findAll();
 
-    SubscriptionType findById(String id);
+    SubscriptionType findById(Long id);
 
     SubscriptionType create(SubscriptionType subscriptionType);
     SubscriptionType update(SubscriptionType subscriptionType);
